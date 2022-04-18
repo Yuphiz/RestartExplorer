@@ -36,3 +36,5 @@
 	02.整合成单文件
 
    
+个人开发不易，如果觉得解决了你的问题，请捐赠支持开发者。你的支持将会让工具越来越好
+![image](https://github.com/Yuphiz/Public/blob/main/Yuphiz_Pay.jpg)
