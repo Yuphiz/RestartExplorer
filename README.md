@@ -1,11 +1,20 @@
 # RestartExplorer
-此脚本可以重启资源管理器并重新打开重启前的文件夹
+此脚本
+  1.可以重启资源管理器并重新打开重启前的文件夹
+  2.关闭重复的文件夹
   
 ​<img src="https://raw.githubusercontent.com/Yuphiz/Public/main/RestartExplorer/%E9%87%8D%E5%90%AF%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80%E4%B8%8A%E6%AC%A1%E7%9B%AE%E5%BD%95.gif"  height = "450" alt="GUI demo" align=center />
   
 此处演示的是后台版
 
 使用方法：
+默认不带参数，双击运行：重启资源管理器并重新打开重启前的文件夹
+带参数：
+--CloseAll 关闭打开的所有文件夹窗口
+--CloseDuplicate 关闭重复文件夹
+--SetSchtasksAutoRun 设置开机启动、后台运行，可以在资源管理器崩溃重启后自动打开上次目录
+--RemoveTasksch 移除开机启动、关闭后台
+release压缩包自带了4个相对路径的快捷方式，方便使用
 	
 
 更新日志：
