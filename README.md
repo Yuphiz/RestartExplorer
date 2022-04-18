@@ -1,2 +1,22 @@
 # RestartExplorer
 此脚本可以重启资源管理器并重新打开重启前的文件夹
+  
+​<img src="https://raw.githubusercontent.com/Yuphiz/Public/main/RestartExplorer/%E9%87%8D%E5%90%AF%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80%E4%B8%8A%E6%AC%A1%E7%9B%AE%E5%BD%95.gif"  height = "450" alt="GUI demo" align=center />
+  
+此处演示的是后台版
+
+### 更新 0.4  
+	01.[增加] windows 11 dev版快速访问(主文件夹)换了新的guid，本次更新增加了新的guid
+	02.[增加] 增加了后台检测资源管理器崩溃重启事件，只要触发重启事件，就自动打开上次的文件夹
+	03.[修复] 增加了taskkill，用来修复当用户不存在tskill时重启资源管理器失败的bug
+	04.[修复] 其他小优化修复
+	05.改名为 restartexplorer
+  
+### 更新 0.3  
+	01.[修复] 修复当ie窗口打开时使用脚本报错
+  
+### 更新 0.2 
+	01.[修复] 修复带有空格的文件不能重启的错误
+	02.整合成单文件
+
+   
