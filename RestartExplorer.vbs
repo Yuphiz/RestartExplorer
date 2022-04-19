@@ -9,42 +9,41 @@ Set Shell = CreateObject("WScript.Shell")
 
 
 
-'Ö±½Ó¹Ø±Õ¿ìËÙ·ÃÎÊ¡¢´ËµçÄÔ¡¢×ÀÃæ¡¢¹«¹²×ÀÃæ 
+'ç›´æ¥å…³é—­å¿«é€Ÿè®¿é—®ã€æ­¤ç”µè„‘ã€æ¡Œé¢ã€å…¬å…±æ¡Œé¢ 
 Dictionary.Add "::{679F85CB-0220-4080-B29B-5540CC05AAB6}",null
-' win11ËÙ·ÃÎÊ»»ÁËid
+' win11é€Ÿè®¿é—®æ¢äº†id
 Dictionary.Add "::{F874310E-B6B7-47DC-BC84-B9E6B38F5903}",null
 Dictionary.Add "::{20D04FE0-3AEA-1069-A2D8-08002B30309D}",null
 Dictionary.Add Shell.SpecialFolders("Desktop"),null
 Dictionary.Add Shell.SpecialFolders("AllUsersDesktop"),null
-Dictionary.Add "G:\Downloads",null
 
 
 
 
-'ÉùÃ÷
-'½Å±¾£º×ÊÔ´¹ÜÀíÆ÷¸¨Öú¹¤¾ß_ÕûºÏ°æ
-'°æ±¾£ºv0.4
-'ËµÃ÷£º±¾½Å±¾¿ÉÒÔ¹Ø±ÕÖØ¸´ÎÄ¼ş¼Ğ¡¢ÖØÆô×ÊÔ´¹ÜÀíÆ÷²¢´ò¿ªÉÏ´ÎµÄÄ¿Â¼
-'Á´½Ó£ºhttps://github.com/Yuphiz/RestartExplorer
+'å£°æ˜
+'è„šæœ¬ï¼šèµ„æºç®¡ç†å™¨è¾…åŠ©å·¥å…·_æ•´åˆç‰ˆ
+'ç‰ˆæœ¬ï¼šv0.5
+'è¯´æ˜ï¼šæœ¬è„šæœ¬å¯ä»¥å…³é—­é‡å¤æ–‡ä»¶å¤¹ã€é‡å¯èµ„æºç®¡ç†å™¨å¹¶æ‰“å¼€ä¸Šæ¬¡çš„ç›®å½•
+'é“¾æ¥ï¼šhttps://github.com/Yuphiz/RestartExplorer
 
-'¸üĞÂ£º  v0.4  a [Ôö¼Ó] windows 11 dev°æ¿ìËÙ·ÃÎÊ(Ö÷ÎÄ¼ş¼Ğ)»»ÁËĞÂµÄguid£¬±¾´Î¸üĞÂÔö¼ÓÁËĞÂµÄguid
-        '      b [ĞŞ¸´] Ôö¼ÓÁËtaskkill£¬ÓÃÀ´ĞŞ¸´µ±ÓÃ»§²»´æÔÚtskillÊ±ÖØÆô×ÊÔ´¹ÜÀíÆ÷Ê§°ÜµÄbug
-            '  c [Ôö¼Ó] Ôö¼ÓÁËºóÌ¨¼ì²â×ÊÔ´¹ÜÀíÆ÷±ÀÀ£ÖØÆôÊÂ¼ş£¬Ö»Òª´¥·¢ÖØÆôÊÂ¼ş£¬¾Í×Ô¶¯´ò¿ªÉÏ´ÎµÄÎÄ¼ş¼Ğ
-            '  d [ĞŞ¸´] ÆäËûĞ¡ÓÅ»¯ĞŞ¸´
-            '  e ¸ÄÃûÎª restartexplorer
+'æ›´æ–°ï¼š  v0.5  a [å¢åŠ ] æ–°å¢explorerå´©æºƒäº‹ä»¶id1000çš„è§¦å‘
+            '  b [ä¿®å¤] ä¿®å¤ä¸€ä¸ªprocessid=0çš„bug
+            '  c [ä¿®å¤] åˆ é™¤ä¸€ä¸ªè‡ªåŠ¨å…³é—­çš„æ–‡ä»¶å¤¹è·¯å¾„ï¼Œå¿˜äº†åˆ é™¤äº†
+        ' v0.4  a [å¢åŠ ] windows 11 devç‰ˆå¿«é€Ÿè®¿é—®(ä¸»æ–‡ä»¶å¤¹)æ¢äº†æ–°çš„guidï¼Œæœ¬æ¬¡æ›´æ–°å¢åŠ äº†æ–°çš„guid
+        '      b [ä¿®å¤] å¢åŠ äº†taskkillï¼Œç”¨æ¥ä¿®å¤å½“ç”¨æˆ·ä¸å­˜åœ¨tskillæ—¶é‡å¯èµ„æºç®¡ç†å™¨å¤±è´¥çš„bug
+            '  c [å¢åŠ ] å¢åŠ äº†åå°æ£€æµ‹èµ„æºç®¡ç†å™¨å´©æºƒé‡å¯äº‹ä»¶ï¼Œåªè¦è§¦å‘é‡å¯äº‹ä»¶ï¼Œå°±è‡ªåŠ¨æ‰“å¼€ä¸Šæ¬¡çš„æ–‡ä»¶å¤¹
+            '  d [ä¿®å¤] å…¶ä»–å°ä¼˜åŒ–ä¿®å¤
+            '  e æ”¹åä¸º restartexplorer
 
-'¸üĞÂ£º  v0.3  a [ĞŞ¸´] ĞŞ¸´µ±ie´°¿Ú´ò¿ªÊ±Ê¹ÓÃ½Å±¾±¨´í
+        ' v0.3  a [ä¿®å¤] ä¿®å¤å½“ieçª—å£æ‰“å¼€æ—¶ä½¿ç”¨è„šæœ¬æŠ¥é”™
 
-        'v0.2 a ĞŞ¸´´øÓĞ¿Õ¸ñµÄÎÄ¼ş²»ÄÜÖØÆôµÄ´íÎó
-        '      b ÕûºÏ³Éµ¥ÎÄ¼ş
+'å·²çŸ¥é—®é¢˜
+'æœªçŸ¥
 
-'ÒÑÖªÎÊÌâ
-'Î´Öª
-
-'×÷Õß£ºYUPHIZ
-'°æÈ¨£º´Ë½Å±¾°æÈ¨¹éYUPHIZËùÓĞ
-        '·²ÓÃ´Ë½Å±¾´ÓÊÂ·¨ÂÉ²»ÔÊĞíµÄÊÂÇéµÄ£¬¾ùÓë±¾×÷ÕßÎŞ¹Ø
-        '´Ë½Å±¾×ñÑ­ gpl3.0 and laterĞ­Òé
+'ä½œè€…ï¼šYUPHIZ
+'ç‰ˆæƒï¼šæ­¤è„šæœ¬ç‰ˆæƒå½’YUPHIZæ‰€æœ‰
+        'å‡¡ç”¨æ­¤è„šæœ¬ä»äº‹æ³•å¾‹ä¸å…è®¸çš„äº‹æƒ…çš„ï¼Œå‡ä¸æœ¬ä½œè€…æ— å…³
+        'æ­¤è„šæœ¬éµå¾ª gpl3.0 and lateråè®®
 
 
 
@@ -85,7 +84,7 @@ sub WithArguments()
 end sub
 
 
-sub RestartExplorer()    'ÖØÆô×ÊÔ´¹ÜÀíÆ÷²¢ÖØĞÂ´ò¿ªÉÏ´ÎµÄÄ¿Â¼
+sub RestartExplorer()    'é‡å¯èµ„æºç®¡ç†å™¨å¹¶é‡æ–°æ‰“å¼€ä¸Šæ¬¡çš„ç›®å½•
 On Error Resume Next
 n=-1
 For Each Oneof in WindowOfoAppShell
@@ -106,7 +105,7 @@ Next
         ' Shell.Run "explorer",0,True
         Shell.Run "cmd /c start explorer",0,True
         if err.number = -2147024894 then
-            msgbox "ÖØÆô×ÊÔ´¹ÜÀíÆ÷Ê§°Ü£¬ÇëÊÖ¶¯ÖØÆô"
+            msgbox "é‡å¯èµ„æºç®¡ç†å™¨å¤±è´¥ï¼Œè¯·æ‰‹åŠ¨é‡å¯"
             exit sub
         end if
     end if
@@ -118,7 +117,7 @@ end sub
 
 
 
-sub CloseDuplicateFolder()   '¹Ø±ÕÖØ¸´ÎÄ¼ş¼Ğ
+sub CloseDuplicateFolder()   'å…³é—­é‡å¤æ–‡ä»¶å¤¹
 For i=WindowOfoAppShell.count-1 to 0 step -1
     if Instr(1, WindowOfoAppShell(i).FullName, "\explorer.exe", 1) > 0 Then
             ' msgbox WindowOfoAppShell(i).Document.Folder.Self.Path
@@ -133,7 +132,7 @@ end sub
 
 
 
-sub CloseAllFolders()    '¹Ø±ÕËùÓĞÎÄ¼ş¼Ğ
+sub CloseAllFolders()    'å…³é—­æ‰€æœ‰æ–‡ä»¶å¤¹
 On Error Resume Next
 Set FolderWindows = CreateObject("Shell.Application").Windows
 For i=FolderWindows.count-1 to 0 step -1
@@ -160,7 +159,7 @@ function Update_CrashState(CrashState)
     TASK_TRIGGER_EVENT = 0
     set triggers = taskDefinition.Triggers
     set trigger = triggers.Create(TASK_TRIGGER_EVENT)
-    trigger.Subscription = "<QueryList><Query Id='0' Path='Application'><Select Path='Application'>*[System[Provider[@Name='Microsoft-Windows-Winlogon'] and (Level=4 or Level=0) and (EventID=1002)]]</Select></Query></QueryList>"
+    trigger.Subscription = "<QueryList><Query Id='0' Path='Application'><Select Path='Application'>(*[System[Provider[@Name='Microsoft-Windows-Winlogon'] and (Level=4 or Level=0) and (EventID=1002)]]) or  ((*[System[Provider[@Name='Application Error'] and (Level=2) and (EventID=1000)]]) and (*[EventData[Data[@Name='AppName'] and (Data='explorer.exe')]]))</Select></Query></QueryList>"
     trigger.Enabled = true
     
     taskDefinition.Data = CrashState
@@ -212,13 +211,15 @@ sub AutoRestartExplorerWhenCrash()
     set WR=getobject("winmgmts:\\.\root\cimv2")
     processid=Get_SchTask("AutoRun")
     if processid <>""  then
-        if processid <> 0 then set ps=WR.execquery("select * from win32_process where processid = "&processid)
-        for each Oneof in ps
-            if Oneof.name = "wscript.exe" then 
-                msgbox "RestartExplorerÒÑ´æÔÚºóÌ¨£¬²»ĞèÒªÖØ¸´Æô¶¯"
-                wscript.quit
-            end if
-        next
+        if processid <> 0 then 
+            set ps=WR.execquery("select * from win32_process where processid = "&processid)
+            for each Oneof in ps
+                if Oneof.name = "wscript.exe" then 
+                    msgbox "RestartExplorerå·²å­˜åœ¨åå°ï¼Œä¸éœ€è¦é‡å¤å¯åŠ¨"
+                    wscript.quit
+                end if
+            next
+        end if
     end if
 
     Set Shell = CreateObject("WScript.Shell")
@@ -265,14 +266,13 @@ sub AutoRestartExplorerWhenCrashInbackgound()
         Set WindowOfoAppShell=oAppShell.Windows()
         
 
-        'Ö±½Ó¹Ø±Õ¿ìËÙ·ÃÎÊ¡¢´ËµçÄÔ¡¢×ÀÃæ¡¢¹«¹²×ÀÃæ
+        'ç›´æ¥å…³é—­å¿«é€Ÿè®¿é—®ã€æ­¤ç”µè„‘ã€æ¡Œé¢ã€å…¬å…±æ¡Œé¢
         Dictionary.Add "::{679F85CB-0220-4080-B29B-5540CC05AAB6}",null
-        ' win11ËÙ·ÃÎÊ»»ÁËid
+        ' win11é€Ÿè®¿é—®æ¢äº†id
         Dictionary.Add "::{F874310E-B6B7-47DC-BC84-B9E6B38F5903}",null
         Dictionary.Add "::{20D04FE0-3AEA-1069-A2D8-08002B30309D}",null
         Dictionary.Add Shell.SpecialFolders("Desktop"),null
         Dictionary.Add Shell.SpecialFolders("AllUsersDesktop"),null
-        Dictionary.Add "G:\Downloads",null
 
         n=-1
         On Error Resume Next
@@ -295,7 +295,7 @@ sub AutoRestartExplorerWhenCrashInbackgound()
             count = Ubound(ArrayPathFonders)
             On Error goto 0
             if count>=0 then
-                ' Shell.popup "×ÊÔ´¹ÜÀíÆ÷±ÀÀ£ÁË£¬ÕıÔÚ´ò¿ª±ÀÀ£Ç°µÄÄ¿Â¼",1
+                ' Shell.popup "èµ„æºç®¡ç†å™¨å´©æºƒäº†ï¼Œæ­£åœ¨æ‰“å¼€å´©æºƒå‰çš„ç›®å½•",1
                 if count >= 9 then count = 9
                 For i=0 to count
                     Shell.Run """"&ArrayPathFonders(i)&""""
@@ -303,8 +303,8 @@ sub AutoRestartExplorerWhenCrashInbackgound()
                 Next
             end if
             
-            Erase ArrayPathFonders  'Çå¿ÕÊı×é
-            Dictionary=RemoveAll  'Çå¿Õ×Öµä
+            Erase ArrayPathFonders  'æ¸…ç©ºæ•°ç»„
+            Dictionary=RemoveAll  'æ¸…ç©ºå­—å…¸
             Update_CrashState(false)
             count = -1
         end if
@@ -313,7 +313,7 @@ sub AutoRestartExplorerWhenCrashInbackgound()
 end sub
 
 
-' ÒÆ³ıÈÎÎñ¼Æ»®
+' ç§»é™¤ä»»åŠ¡è®¡åˆ’
 sub Remove_Tasksch()
     processid=Get_SchTask("AutoRun")
     if processid <>"" then
@@ -324,9 +324,9 @@ sub Remove_Tasksch()
     set Shell=CreateObject("Wscript.Shell") 
 
     askdelete=Shell.popup( _
-      "·ÀÎó²Ù×÷£¬ÕæµÄÒªÉ¾³ı¡¾"&title&"¡¿Âğ£¿", _
+      "é˜²è¯¯æ“ä½œï¼ŒçœŸçš„è¦åˆ é™¤ã€"&title&"ã€‘å—ï¼Ÿ", _
       0, _
-      "·ÀÎó²Ù×÷£¬ÇëÔÙÈ·ÈÏ",_
+      "é˜²è¯¯æ“ä½œï¼Œè¯·å†ç¡®è®¤",_
       1+48+256+4096 _
     )
     if askdelete=2 then wscript.quit
@@ -341,7 +341,7 @@ sub Remove_Tasksch()
     rootFolder.deleteFolder title,0
     wscript.sleep 700
     Shell.popup _
-      "³É¹¦Ğ¶ÔØ¡¾"&title&"¡¿"&vbcrlf&_
-      "ÒÑÉ¾³ıÈ«²¿µÄÈÎÎñ¼Æ»®",_
+      "æˆåŠŸå¸è½½ã€"&title&"ã€‘"&vbcrlf&_
+      "å·²åˆ é™¤å…¨éƒ¨çš„ä»»åŠ¡è®¡åˆ’",_
     3
 end sub
