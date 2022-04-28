@@ -1,11 +1,12 @@
 # RestartExplorer
 此脚本
-  1.可以重启资源管理器并重新打开重启前的文件夹
-  2.关闭重复的文件夹
+  1.可以重启资源管理器并重新打开重启前的文件夹  
+  2.关闭重复的文件夹  
   
 ​<img src="https://raw.githubusercontent.com/Yuphiz/Public/main/RestartExplorer/%E9%87%8D%E5%90%AF%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80%E4%B8%8A%E6%AC%A1%E7%9B%AE%E5%BD%95.gif"  height = "450" alt="GUI demo" align=center />
   
-此处演示的是后台版
+此处演示的是后台版  
+注意：后台版没有测试explorer一直崩溃，脚本一直重启资源管理器的情况
 
 ### 使用方法：
   默认不带参数，双击运行：重启资源管理器并重新打开重启前的文件夹
